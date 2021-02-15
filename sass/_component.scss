@@ -1,0 +1,81 @@
+////////////////////////////////////////////////////////////////
+/// Header
+header {
+    position: relative;
+    background-color: #444;
+
+}
+
+.nav {
+
+    &__link--logIn {
+        padding-right: 2rem;
+    }
+
+    &__link--signUp {
+        border: 2px solid var(--color-grey-light-4);
+        padding: .5rem 1rem;
+        border-radius: 100px;
+    }
+    &__link:visited,
+    &__link:link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--color-grey-light-4);
+    }
+
+    &--trips {
+        padding-left: 3rem;
+
+    }
+    
+    &--user {
+        padding: 0 4rem;
+    }
+    &__user-photo {
+        align-self: center;
+        height: 4rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+}
+
+/////////////////////////////////////
+/////////SECTION MAIN
+h1 {
+    text-transform: uppercase;
+    color: var(--color-grey-light-2);
+}
+
+.heading-primary {
+
+    &--main {
+        display: block;
+        font-size: 5rem;
+        letter-spacing: 2px;
+        word-spacing: 3px;
+
+        animation: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(1,0,0,1);
+    }
+    &--sub {
+        display: block;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-weight: 700;
+
+        animation: moveInRight;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(1,0,0,1);
+    }
+  
+}
+.main__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
