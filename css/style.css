@@ -92,6 +92,16 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
 
+.section-departures {
+  background-color: var(--color-grey-light-1); }
+
+.departures__container {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10rem; }
+
 header {
   position: relative;
   background-color: var(--color-secondary); }
