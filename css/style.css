@@ -200,5 +200,4 @@ p {
   width: 100%;
   height: auto;
   display: flex;
-  align-items: stretch;
-  max-height: 18rem; }
+  align-items: stretch; }
