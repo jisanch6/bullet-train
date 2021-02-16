@@ -2,7 +2,7 @@
 /// Header
 header {
     position: relative;
-    background-color: #444;
+    background-color: var(--color-secondary);
 
 }
 
@@ -16,12 +16,20 @@ header {
         border: 2px solid var(--color-grey-light-4);
         padding: .5rem 1rem;
         border-radius: 100px;
+
+        &:hover {
+            border: 2px solid var(--color-grey-dark-4);
+        }
     }
     &__link:visited,
     &__link:link {
         text-decoration: none;
         text-transform: uppercase;
         color: var(--color-grey-light-4);
+    }
+
+    &__link:hover {
+        color: var(--color-grey-dark-4);
     }
 
     &--trips {
@@ -79,3 +87,69 @@ h1 {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+/////////////////////////////////////
+/////////SECTION FEATURES
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    word-spacing: .2rem;
+    letter-spacing: .1rem;
+    padding-top: 6rem;
+
+    &:after {
+        display: block;
+        height: 2px;
+        background-color: var(--color-primary);
+        content: " ";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    word-spacing: .2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.features-showcase {
+
+
+     &__description-box {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        margin: 1.5rem auto 3rem auto;
+     }
+
+     &__description {
+         font-size: 2.5rem;
+         font-weight: 100;
+         word-spacing: .2rem;
+         letter-spacing: .1rem;
+
+     }
+}
+
+p {
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+}
+
+/////////////////////////////////////
+/////////SECTION GALLERY
+.gallery__img--1 {
+    width: 100%;
+    height: auto;
+}
+
+
+/////////////////////////////////////
+/////////SECTION TRIPS

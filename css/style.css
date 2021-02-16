@@ -22,6 +22,7 @@
   --color-primary: #2f6083;
   --color-primary-light: #2b5777;
   --color-primary-dark: #264e6a;
+  --color-secondary: #444;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -70,9 +71,30 @@ body {
   background-image: linear-gradient(to bottom right, rgba(47, 96, 131, 0.75), rgba(43, 88, 120, 0.75)), url(../img/lu1187490788-GH9fV3tHvfY-unsplash.jpg);
   background-size: cover; }
 
+.section-features {
+  background-color: var(--color-grey-light-2);
+  padding-bottom: 8rem; }
+
+.features-showcase {
+  max-width: 120rem;
+  display: grid;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem; }
+
+.section-gallery {
+  background-image: linear-gradient(to bottom right, rgba(47, 96, 131, 0.75), rgba(43, 88, 120, 0.75)); }
+
+.gallery {
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
 header {
   position: relative;
-  background-color: #444; }
+  background-color: var(--color-secondary); }
 
 .nav__link--logIn {
   padding-right: 2rem; }
@@ -81,11 +103,16 @@ header {
   border: 2px solid var(--color-grey-light-4);
   padding: .5rem 1rem;
   border-radius: 100px; }
+  .nav__link--signUp:hover {
+    border: 2px solid var(--color-grey-dark-4); }
 
 .nav__link:visited, .nav__link:link {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-grey-light-4); }
+
+.nav__link:hover {
+  color: var(--color-grey-dark-4); }
 
 .nav--trips {
   padding-left: 3rem; }
@@ -128,3 +155,47 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  word-spacing: .2rem;
+  letter-spacing: .1rem;
+  padding-top: 6rem; }
+  .heading-secondary:after {
+    display: block;
+    height: 2px;
+    background-color: var(--color-primary);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 2rem; }
+
+.heading-tertiary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  word-spacing: .2rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase; }
+
+.features-showcase__description-box {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin: 1.5rem auto 3rem auto; }
+
+.features-showcase__description {
+  font-size: 2.5rem;
+  font-weight: 100;
+  word-spacing: .2rem;
+  letter-spacing: .1rem; }
+
+p {
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+  word-spacing: .1rem; }
+
+.gallery__img--1 {
+  width: 100%;
+  height: auto; }

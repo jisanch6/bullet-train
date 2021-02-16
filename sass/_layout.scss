@@ -19,3 +19,30 @@
     
 
 }
+
+.section-features {
+    background-color: var(--color-grey-light-2);
+    padding-bottom: 8rem;
+}
+
+.features-showcase {
+    max-width: 120rem;
+    display: grid;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+
+}
+
+.section-gallery {
+    background-image: linear-gradient( to bottom right,rgba(47, 96, 131, 0.75), rgba(43, 88, 120, 0.75)) ;
+}
+
+.gallery {
+    padding: 10rem 0;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
