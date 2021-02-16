@@ -130,7 +130,7 @@ h1 {
 
      &__description {
          font-size: 2.5rem;
-         font-weight: 100;
+         font-weight: 300;
          word-spacing: .2rem;
          letter-spacing: .1rem;
 
@@ -145,9 +145,14 @@ p {
 
 /////////////////////////////////////
 /////////SECTION GALLERY
+
 .gallery__img--1 {
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: stretch;
+
+    max-height: 18rem;
 }
 
 
