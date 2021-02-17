@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////
 /// Header
-header {
+.header {
     position: relative;
     background-color: var(--color-secondary);
 
@@ -321,3 +321,23 @@ p {
 
 /////////////////////////////////////
 /////// SINGLE DEPARTURES PAGE
+
+.departure-heading {
+    font-size: 4rem;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+
+    & span {
+        padding: 1rem 1.5rem;
+        line-height: 1;
+        box-decoration-break: clone;
+        background-image: linear-gradient( to bottom right,rgba(47, 96, 131, 0.80), rgba(43, 88, 120, 0.80));
+    }
+}
+.heading-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

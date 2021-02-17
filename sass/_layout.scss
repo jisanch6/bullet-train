@@ -1,3 +1,5 @@
+/////////////////////////////////////
+/////// MAIN PAGE LAYOUT
 .container {
     max-width: 100%;
     margin: 2rem 3rem;
@@ -59,4 +61,17 @@
     grid-gap: 10rem;
     margin: 5rem auto;
     padding: 0 3rem;
+}
+
+
+////////////////////////////////
+////// SINGLE DEPARTURE LAYOUT
+
+.section-header {
+    height: 50vh;
+    width: auto;
+    background-image: linear-gradient( to bottom right, rgba(47, 96, 131, 0.75), rgba(43, 88, 120, 0.75)), url(../img/houston.jpg);
+    background-size: cover;
+    
+
 }
