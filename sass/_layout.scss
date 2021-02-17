@@ -1,0 +1,117 @@
+/////////////////////////////////////
+/////// MAIN PAGE LAYOUT ////////////
+////////////////////////////////////
+.container {
+    max-width: 100%;
+    margin: 2rem 3rem;
+}
+
+.header {
+    font-size: 1.6rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-main {
+    height: 85vh;
+    width: auto;
+    background-image: linear-gradient( to bottom right, rgba(47, 96, 131, 0.75), rgba(43, 88, 120, 0.75)), url(../img/bullet-train-main.jpg);
+    background-size: cover;
+    
+
+}
+
+.section-features {
+    background-color: var(--color-grey-light-2);
+    padding-bottom: 8rem;
+}
+
+.features-showcase {
+    max-width: 120rem;
+    display: grid;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+
+}
+
+.section-gallery {
+    background-image: linear-gradient( to bottom right,rgba(47, 96, 131, 0.75), rgba(43, 88, 120, 0.75)) ;
+}
+
+.gallery {
+    padding: 10rem 0;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section-departures {
+    background-color: var(--color-grey-light-1);
+    padding-bottom: 8rem;
+}
+
+.departures__container {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10rem;
+    margin: 5rem auto;
+    padding: 0 3rem;
+}
+
+.footer {
+    background-color: var(--color-grey-light-1);
+    padding: 6rem 4rem 3rem 4rem;
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 0.75rem;
+    justify-content: space-between;
+}
+
+
+/////////////////////////////////////////
+////// SINGLE DEPARTURE LAYOUT //////////
+/////////////////////////////////////////
+
+.section-header {
+    height: 50vh;
+    width: auto;
+    background-image: linear-gradient( to bottom right, rgba(47, 96, 131, 0.75), rgba(43, 88, 120, 0.75)), url(../img/houston.jpg);
+    background-size: cover;
+    
+
+}
+
+.section-information {
+    background-color: var(--color-grey-light-2);
+    padding: 0 4rem;
+    padding-bottom: 6rem;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    column-gap: 3rem;
+    max-width: 100rem;
+}
+
+.section-reviews {
+    padding: 6rem 4rem;
+    background-color: var(--color-grey-light-1)
+}
+
+.reviews {
+    padding: 5rem 0;
+    display: grid;
+    grid-column-gap: 6rem;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
