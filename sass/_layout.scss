@@ -64,6 +64,16 @@
     padding: 0 3rem;
 }
 
+.footer {
+    background-color: var(--color-grey-light-1);
+    padding: 6rem 4rem 3rem 4rem;
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 0.75rem;
+    justify-content: space-between;
+}
+
 
 /////////////////////////////////////////
 ////// SINGLE DEPARTURE LAYOUT //////////
