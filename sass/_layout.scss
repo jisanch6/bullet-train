@@ -91,3 +91,17 @@
     column-gap: 3rem;
     max-width: 100rem;
 }
+
+.section-reviews {
+    padding: 6rem 4rem;
+    background-color: var(--color-grey-light-1)
+}
+
+.reviews {
+    padding: 5rem 0;
+    display: grid;
+    grid-column-gap: 6rem;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
