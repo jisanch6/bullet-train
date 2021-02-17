@@ -1,5 +1,6 @@
 /////////////////////////////////////
-/////// MAIN PAGE LAYOUT
+/////// MAIN PAGE LAYOUT ////////////
+////////////////////////////////////
 .container {
     max-width: 100%;
     margin: 2rem 3rem;
@@ -64,8 +65,9 @@
 }
 
 
-////////////////////////////////
-////// SINGLE DEPARTURE LAYOUT
+/////////////////////////////////////////
+////// SINGLE DEPARTURE LAYOUT //////////
+/////////////////////////////////////////
 
 .section-header {
     height: 50vh;
@@ -74,4 +76,18 @@
     background-size: cover;
     
 
+}
+
+.section-information {
+    background-color: var(--color-grey-light-2);
+    padding: 0 4rem;
+    padding-bottom: 6rem;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    column-gap: 3rem;
+    max-width: 100rem;
 }

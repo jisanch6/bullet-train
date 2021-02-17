@@ -184,9 +184,6 @@ p {
 .gallery__img--1 {
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: stretch;
-
 }
 
 
@@ -320,10 +317,14 @@ p {
 //////// END OF MAIN PAGE ///////////
 
 /////////////////////////////////////
-/////// SINGLE DEPARTURES PAGE
+/////// SINGLE DEPARTURES PAGE///////
+/////////////////////////////////////
+
+/////////////////////////////////////
+/////////SECTION HEADING
 
 .departure-heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     word-spacing: 3px;
     letter-spacing: 2px;
 
@@ -341,3 +342,43 @@ p {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+/////////////////////////////////////
+/////////SECTION INFORMATION
+
+.info-box {
+    
+    &__heading {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__detail {
+        padding-bottom: 1.5rem;
+    }
+
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-primary);
+        margin-right: 1rem;
+    }
+
+    &__label {
+        font-size: 1.6rem;
+        font-weight: 700;
+        word-spacing: 1px;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        word-spacing: 1px;
+    }   
+
+    &__description {
+        font-size: 1.2rem;
+    }
+}
+
+/////////////////////////////////////
+/////////SECTION REVIEWS

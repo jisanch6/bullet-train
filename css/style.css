@@ -111,6 +111,18 @@ body {
   background-image: linear-gradient(to bottom right, rgba(47, 96, 131, 0.75), rgba(43, 88, 120, 0.75)), url(../img/houston.jpg);
   background-size: cover; }
 
+.section-information {
+  background-color: var(--color-grey-light-2);
+  padding: 0 4rem;
+  padding-bottom: 6rem; }
+
+.info-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  column-gap: 3rem;
+  max-width: 100rem; }
+
 .header {
   position: relative;
   background-color: var(--color-secondary); }
@@ -244,9 +256,7 @@ p {
 
 .gallery__img--1 {
   width: 100%;
-  height: auto;
-  display: flex;
-  align-items: stretch; }
+  height: auto; }
 
 .card {
   border-radius: 5px;
@@ -349,3 +359,28 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+
+.info-box__heading {
+  font-size: 3rem;
+  margin-bottom: 2rem; }
+
+.info-box__detail {
+  padding-bottom: 1.5rem; }
+
+.info-box__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--color-primary);
+  margin-right: 1rem; }
+
+.info-box__label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  word-spacing: 1px; }
+
+.info-box__text {
+  font-size: 1.6rem;
+  word-spacing: 1px; }
+
+.info-box__description {
+  font-size: 1.2rem; }
