@@ -144,6 +144,19 @@ body {
   overflow-x: scroll;
   scroll-snap-type: x mandatory; }
 
+.main {
+  background-color: var(--color-grey-light-1);
+  padding: 8rem 6rem;
+  height: 73vh; }
+
+.form-box {
+  margin: 4.5rem auto 0 auto;
+  max-width: 45rem;
+  background-color: #fff;
+  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+  padding: 4rem 7rem;
+  border-radius: 5px; }
+
 .header {
   position: relative;
   background-color: var(--color-secondary); }
@@ -487,3 +500,49 @@ p {
     fill: var(--color-primary); }
   .reviews__star--inactive {
     fill: var(--color-grey-dark-4); }
+
+.btn--logIn {
+  margin-right: 7rem; }
+
+.form__heading {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+  margin-bottom: 3rem; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: .76rem; }
+
+.form__input {
+  display: block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: inherit;
+  padding: 1.25rem 1.75rem;
+  border: none;
+  width: 100%;
+  background-color: #fff;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  border-radius: 5px;
+  box-sizing: border-box; }
+  .form__input:focus {
+    outline: none;
+    border-bottom: 3px solid var(--color-primary-light); }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff5930; }
+
+.form__link {
+  font-size: 1.4rem; }
+
+.forgotPass-form__text {
+  margin-bottom: .75rem; }
